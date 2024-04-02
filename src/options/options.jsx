@@ -1,6 +1,7 @@
+import React from 'react'
 import { createRoot } from 'react-dom/client'
 
-const App = () => {
+const Options = () => {
   return (
     <div>
       <h1>HELLO FROM OPTIONS</h1>
@@ -11,4 +12,4 @@ const App = () => {
 const container = document.createElement('div')
 document.body.appendChild(container)
 const root = createRoot(container)
-root.render(<App />)
+root.render(<Options />)
