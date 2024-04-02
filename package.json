@@ -2,7 +2,6 @@
   "name": "react-chrome",
   "version": "1.0.0",
   "description": "Chrome extension with React",
-  "main": "index.js",
   "scripts": {
     "start": "webpack --watch --progress --config webpack.dev.js",
     "build": "webpack --progress --config webpack.prod.js"
