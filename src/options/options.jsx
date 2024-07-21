@@ -1,15 +1,18 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 
-const Options = () => {
-  return (
-    <div>
-      <h1>HELLO FROM OPTIONS</h1>
-    </div>
-  )
-}
+import { AuthContextProvider } from '../context/AuthContext'
 
-const container = document.createElement('div')
+import Options from '../pages/Options'
+
+import '../css/index.css'
+
+document.body.setAttribute('id', 'options-page')
+const container = document.createElement('main')
 document.body.appendChild(container)
 const root = createRoot(container)
-root.render(<Options />)
+root.render(
+  <AuthContextProvider>
+    <Options />
+  </AuthContextProvider>
+)
